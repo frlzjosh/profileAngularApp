@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService} from './../data.service';
 
 @Component({
   selector: 'app-home',
@@ -9,17 +8,12 @@ import { DataService} from './../data.service';
 export class HomeComponent implements OnInit {
   counter: number = 0;
   isClicked: boolean = true
-  user: Object;
 
-  constructor(private data: DataService ) {
-    this.data.getUsers()
+  constructor() {
   }
 
   ngOnInit() {
-    this.data.getUsers().subscribe(data => {
-      this.user = data;
-      console.log(this.user)
-    })
+
   }
 
   firstClick(){

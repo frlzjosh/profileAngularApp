@@ -9,9 +9,6 @@
 }">Home binding by ngStyle</h1>
 <button (click)="firstClick()">Toggle Header Color </button>
 
-<div class="user__section" >
-  <div class="user__block" *ngFor="let u of user.data">
-    <img [src]="u.avatar" class="user__img">
-    <p class="user__text">{{ u.first_name}} {{u.last_name}}</p>
-  </div>
+<div class="user__section">
+  <app-profiles></app-profiles>
 </div>
