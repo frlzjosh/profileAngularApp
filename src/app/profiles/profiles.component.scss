@@ -1,0 +1,18 @@
+.profile{
+    &__text{
+        color: white;
+        text-align: center;
+    }
+    &__img{
+        float: left;
+        margin: auto 0;
+        border-radius: 4px;
+    }
+    &__block{
+        border-radius: 4px;
+        height: auto;
+        width: auto;
+        background-color: black;
+        margin-bottom: 2em;
+    }
+}

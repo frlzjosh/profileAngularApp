@@ -9,6 +9,6 @@
 }">Home binding by ngStyle</h1>
 <button (click)="firstClick()">Toggle Header Color </button>
 
-<div class="user__section">
-  <app-profiles></app-profiles>
+<div *ngIf="profiles" class="profile__section">
+    <app-profiles  *ngFor="let profile of profiles.data" [profile]="profile"></app-profiles>
 </div>
