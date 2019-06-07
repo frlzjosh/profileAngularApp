@@ -1,0 +1,23 @@
+header{
+    background: rgb(26, 35, 44);
+    nav{
+        justify-self: right;
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li{
+                float: left;
+                a{
+                    padding: 1.5em;
+                    text-transform: uppercase;
+                    font-size: 0.8em;
+                    &:hover{
+                        background: white;
+                    }
+                }
+            }
+        }
+    }
+}
