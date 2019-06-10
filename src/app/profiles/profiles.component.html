@@ -1,4 +1,10 @@
-<div routerLink="/profileAccount" class="profile__block">
-  <img [src]="profile.avatar" class="profile__img">
-  <p class="profile__text">{{ profile.first_name}} {{profile.last_name}}</p>
+<div class="profile__block">
+  <a>
+    <img [src]="profile.avatar" class="profile__img">
+    <p class="profile__text">{{ profile.first_name}} {{profile.last_name}}</p>
+  </a>
+  <ul>
+    <li routerLink="/profilePage">Profile Page</li>
+  </ul>
+  <router-outlet name='profilePage'></router-outlet>
 </div>
